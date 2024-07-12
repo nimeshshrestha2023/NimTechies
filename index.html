@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="images/smokeman.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimesh - Web Developer</title>
+
+    <link rel="stylesheet" href="assets/styles/homepage.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onload="return clearFields()">
+
+    <!-- header design -->
+    <header class="header">
+        <a href="" class="logo">Nimesh</a>
+        <!-- <img src="/images/lol.jpg" class="logo"> -->
+
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+
+            <span class="active-nav"></span>
+
+        </nav>
+    </header>
+    <div id="errorMsg"></div>
+    <!-- home section design -->
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Nimesh Shrestha</span></h1>
+            <div class="text-animate">
+                <h3>WEB DEVELOPER</h3>
+
+            </div>
+            <p>Welcome to NimTechies!
+
+                At NimTechies, founded by tech enthusiast Nimesh, we deliver innovative and customized IT solutions tailored to your business needs. Our expert team excels in software development, web design, cybersecurity, and IT consulting. We combine creativity and technical skill to provide cutting-edge, practical solutions.</p>
+
+            <div class="btn-box">
+                <a href="https://www.linkedin.com/in/nimesh-undefined-1944572a1/" class="btn">Hire Me</a>
+                <a href="https://www.instagram.com/crestha.nimeshhhh/" class="btn">Let's
+                    Talk</a>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.facebook.com/nimesh.shrestha.1291"><i
+                    class="bx bxl-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/nimesh-undefined-1944572a1/"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://www.instagram.com/crestha.nimeshhhh/"><i class="bx bxl-instagram"></i></a>
+        </div>
+
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <h2 class="heading">About<span>Me</span></h2>
+
+        <div class="about-img">
+            <img src="profile.jpg" alt="">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>Cyber Ninja</h3>
+            <p id="introText">Hey! Nimesh here. With a proven track record in frontend and full-stack development, I've worked closely with stakeholders to create web solutions that align with business objectives. As a Frontend Developer, I excel at designing user-centric interfaces that enhance user experience and drive engagement. <span id="extraText" style="display: none; color: wheat;">I
+                    specialized in crafting responsive
+                    and visually appealing interfaces while ensuring optimal website performance through
+                    server-side scripting. Transitioning into a Full Stack Frontend Developer role, I expanded
+                    my skills to encompass backend technologies, leading the development of full-stack
+                    applications and integrating RESTful APIs for enhanced functionality. Progressing to a
+                    Full Stack Engineer, I played a key role in architecting scalable solutions, optimizing
+                    database schemas, and mentoring junior developers. Finally, as a Senior Full Stack
+                    Engineer, I provided technical leadership, guided development teams, and contributed to
+                    strategic decision-making while maintaining a focus on innovation and continuous
+                    improvement. Throughout these roles, I prioritized collaboration, user-centric design,
+                    and adherence to best practices to deliver high-quality software solutions.</span>
+            <div class="btn-box btns">
+                <a href="#" class="btn" id="readMoreLink">Read More</a></p>
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <!-- education section design -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calender"></i>2000-2006</div>
+                            <h3>First School- Motherland </h3>
+                            <p>● I began my educational journey at Motherland, where I studied until Grade 10 before moving forward.<br>
+                                ●  Throughout my years there, I sharpened my academic abilities and learned important life skills like teamwork, resilience, and perseverance.<br>
+                                ● Leaving my cherished school, I embarked on a new phase of my educational path.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calender"></i>2007-2009</div>
+                            <h3>Graduated Hign Schooling from - Himalaya Secondary School</h3>
+                            <p> ● Cleared SLC and venturing into the exciting world of University!<br>
+                                ● With determination and dedication, I navigated through the corridors
+                                of Himalaya Secondary School, striving for excellence in both academics
+                                 and extracurricular activities.<br>
+                                 ● With the SLC certificate in hand, I eagerly embraced the next chapter
+                                  of my academic odyssey, venturing into the exhilarating world of 
+                                  university, brimming with boundless opportunities and new horizons 
+                                  to explore.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calender"></i>2010-2013</div>
+                            <h3>London Metropolitian University — Bachelor of Information Technology</h3>
+                            <p>●Specialized in Software Engineering and System Architecture.<br>
+                                ● Completed a thesis on "Scalable Microservices Architecture for SaaS Platforms".<br>
+                                ● Graduated with Honors.<br>
+                                </p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calender"></i>2017-Present</div>
+                            <h3>Awards</h3>
+                            <p>● Recognized for developing an innovative cloud-based solution that streamlined data processing for financial
+                                services.<br>
+                                ● Awarded for exceptional contributions to project success, demonstrating outstanding problem-solving skills
+                                and technical leadership.<br>
+                                ● Honored as a promising talent in technology for significant contributions to back-end development projects
+                                and community engagement.<br>
+                                </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="education-column">
+                <h3 class="title">Experience</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calender"></i>Nov 2013 - Feb 2017 (3 years 4 months), Sydney, Austrilia</div>
+                            <h3>Full Stack Developer</h3>
+                            <p>● Built and deployed scalable, responsive SaaS healthcare web applications on AWS using React/Next.js, and
+                                Docker, achieving efficient deployment and maintenance.<br> 
+                                ● Used React components, TSX syntax, and functional programming principles to create efficient, reusable UI
+                                components, reducing development time and accelerating feature implementation
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calender"></i>Mar 2017 - Oct 2019 (2 years 8 months), Los Angels, USA</div>
+                            <h3>Full Stack Engineer</h3>
+                            <p>● Built and deployed a comprehensive real estate application using React, Redux, TypeScript, Django, and
+                                PostgreSQL, offering advanced features such as property search, listing, booking, and payment.<br>
+                                ● Used AWS and Docker containers to deploy multi-tenant applications.<br>
+                                ● Collaborated with product managers and UI/UX designers on responsive design strategies, ensuring broad
+                                device and OS compatibility and attractive UI design.<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calender"></i>Nov 2019 - Nov 2021 (2 years 1 month), Stockholm County, Sweden</div>
+                            <h3>Full Stack Engineer</h3>
+                            <p>● Led the development and launch of multiple social media platform applications from scratch, using AWS and
+                                microservices to achieve high scalability and maintainability.<br>
+                                ● Built complex data management features using React/Next.js, TypeScript, and D3.js, and integrated ReduxSaga, Context API, and React-Query for state management and data fetching. Applied Tailwind CSS for
+                                responsive and attractive UI design.
+                                </p>
+                            </div>
+                    </div>
+            
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calender"></i>Dec 2021 - Feb 2024 (2 years 3 months), Stockholm County, Sweden</div>
+                            <h3> Senior Full Stack Engineer</h3>
+                            <p>● Led a team of 5 developers to build and launch SaaS web applications on AWS using Kubernetes and
+                                microservices, achieving high scalability and reliability.<br>
+                                ● Built responsive and user-friendly front-end features using React/Next.js, and TypeScript, and developed
+                                robust and secure back-end services using PHP/Laravel. 
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>C#<span>40%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Java <span>50%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>PHP<span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Python <span>65%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-column">
+                <h3 class="title">Professional Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Full-Stack Development<span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Back-End Web Development <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Github<span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Database<span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form id="contactForm" action="https://formspree.io/f/xdoqzwgn" method="post" onsubmit="return Validation()">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" name="name" id="name" placeholder="Full Name">
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="email" id="email" placeholder="Email Address">
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" name="phone" id="phone" placeholder="Mobile Number">
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" id='subject' name="subject" placeholder="Email Subject">
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="textarea-field">
+                <textarea cols="30" rows="10" name="message" id="message" placeholder="Your Message"></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Nimesh  | All Rights Reserved |
+
+            </p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <script src="assets/scripts/homepage.js"></script>
+
+</body>
+
+</html>
